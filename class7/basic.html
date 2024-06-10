@@ -1,0 +1,135 @@
+<!-- Min max width height 
+div > pall p tags, one level deep in div
+div + pp tags immediately after div
+div ~ p
+Before, after
+First child 3n+1
+Last child 
+nth last child
+nth of type , nth last of type 
+Selection 
+target, active 
+Target blank / target self -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+
+        &::selection {
+            background-color: red;
+            color: wheat;
+        }
+    }
+
+   * ::selection{
+        background-color: red;
+    }
+
+    /* .parent > p {
+       color: red;
+        
+    } */
+
+    /* .parent + p {
+       color: red;
+    } */
+
+    /* .parent ~ p {
+       color: red;
+    } */
+
+
+    /* before */
+
+
+    /* .parent h1 {
+        position: relative;
+    }
+    
+    .parent h1::before {
+        transition: 200ms all;
+        content: "";
+        width: 0rem;
+        height: 4px;
+        bottom: -3px;
+        background-color: rgb(255, 0, 0);
+        position: absolute;
+    }
+
+    .parent h1:hover::before {
+        width: 5rem;
+    } */
+
+    /* <!-- first childs --> */
+
+    /* .parent p:nth-child(5n+1){
+        color: red;
+    } */
+    /* .parent p:nth-of-type(5) {
+        color: red;
+    } */
+
+
+    a {
+        color: yellow;
+    }
+
+    a:active {
+        color: red;
+    }
+
+    a:target {
+        color: red;
+    }
+</style>
+
+<body>
+
+    <!-- brfore -->
+
+    <!-- <div class="parent">
+        <h1>Hello</h1>
+    </div> -->
+
+    <!-- first childs -->
+
+    <!-- <div class="parent">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div> -->
+
+
+    <!-- target -->
+
+    <a href="">click</a>
+
+
+
+
+</body>
+
+</html>

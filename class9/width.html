@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 60rem;
+        margin: auto;
+    }
+
+    img {
+        height: 5rem;
+    }
+
+    .box {
+        button {}
+
+        p {
+            margin-top: 2rem;
+            display: none;
+        }
+
+        &:hover {
+            p {
+                display: block;
+            }
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+
+            <button>
+                hover me
+            </button>
+            <p>hello</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

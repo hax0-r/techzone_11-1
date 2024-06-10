@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+
+        h1 {
+            font-size: 3rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        h2 {
+            display: none;
+        }
+
+    }
+
+    @media (max-width:500px) {
+        nav {
+            h1 {
+                font-size: 2rem;
+            }
+
+            ul {
+                display: none;
+            }
+
+            h2 {
+                display: block;
+            }
+        }
+    }
+
+    .main{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .left{
+            h1{
+                font-size: 3rem;
+            }
+            p{
+
+            }
+            button{
+                padding: 1rem 2rem;
+            }
+        }
+    }
+
+    @media (max-width:900px) {
+        .main{
+            .left{
+                h1{
+
+                }
+                p{
+
+                }
+                button{
+
+                }
+            }
+            img{
+                height: 10rem;
+            }
+        }
+    }
+
+    @media (max-width:500px) {
+        .main{
+            flex-direction: column;
+            .left{
+                text-align: center;
+                padding-bottom: 3rem;
+            }
+        }
+    }
+    
+</style>
+
+<body>
+    <nav>
+        <h1>Logo</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">Home</a></li>
+        </ul>
+        <h2>X</h2>
+    </nav>
+
+    <div class="main">
+        <div class="left">
+            <h1>Left</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Similique, itaque!</p>
+            <button>Submit</button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1714139797690-969497e4a65e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8"
+            alt="">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+</head>
+
+<style>
+    .parent {
+        height: 10rem;
+        width: 10rem;
+        background-color: red;
+        animation: move 2s infinite;
+    }
+
+    @keyframes move {
+        from {
+            transform: scale(2);
+            transform: translateX(-20rem);
+            transform: rotate(300deg);
+        }
+
+        to {
+            background-color: pink;
+            transform: scale(1);
+            width: 20rem;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="parent"></div>
+
+</body>
+
+</html>

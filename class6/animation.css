@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .child {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: move 7s infinite;
+}
+
+/* @keyframes move {
+    from {
+        transform: translateX(20rem);
+    }
+
+    to {
+        transform: translateY(-10rem);
+    }
+} */
+
+@keyframes move {
+    0%{
+        background-color: pink;
+    }
+    25%{
+        background-color: red;
+        
+    }
+    50%{
+        background-color: blue;
+        
+    }
+    100%{
+        background-color: orange;
+        transform: scale(2);
+
+    }
+}
