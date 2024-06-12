@@ -1,0 +1,24 @@
+.bb{
+    background-color: rgba(0, 0, 255, 0.546);
+}
+.bg{
+    background-color: green;
+}
+.bo{
+    background-color: orange;
+}
+.by{
+    background-color: yellow;
+}
+.black{
+    border: 2px solid black;
+}
+.pink{
+    border: 2px solid pink;
+}
+.gray{
+    border: 2px solid gray;
+}
+.purple{
+    border: 2px solid purple;
+}
